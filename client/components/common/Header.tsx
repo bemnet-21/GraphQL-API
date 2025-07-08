@@ -13,7 +13,7 @@ const Header = () => {
     <header className={`${color} h-18 w-full flex justify-between items-center text-2xl font-bold px-4 sm:px-12 md:px-16`}>
         <Link href="/"><h1>Logo</h1></Link>
         <div className='flex justify-between gap-x-6 text-lg flex-col font-semibold md:flex-row md:text-2xl md:font-bold' >
-            <Link href='/clients/'>
+            <Link href='/projects/addProject'>
               <h1>Add Project</h1>
             </Link>
             <Link href='/clients/addClient'>

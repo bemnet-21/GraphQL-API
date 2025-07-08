@@ -9,7 +9,8 @@ const ProjectCard: React.FC<Project> = ({
     name,
     status,
     description,
-    client
+    client,
+    id
 }) => {
   return (
     <div className='h-92 bg-[#a40e4c] w-64 text-[#F1E8B8] p-6 flex flex-col justify-between gap-y-4 rounded-xl'>
@@ -33,7 +34,7 @@ const ProjectCard: React.FC<Project> = ({
             <p>{client.name}</p>
         </div>
         <div className='mx-auto'>
-            <Link href={`/projects/${client.id}`}>
+            <Link href={`/projects/${id}`}>
                 <Button label='Click for Details' />
             </Link>
         </div>
